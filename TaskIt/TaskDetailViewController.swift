@@ -12,6 +12,8 @@ class TaskDetailViewController: UIViewController {
     
     var detailTaskModel: TaskModel!
     
+    var mainVC: ViewController!
+    
     @IBOutlet weak var taskTextField: UITextField!
     @IBOutlet weak var subtaskTextField: UITextField!
     @IBOutlet weak var dueDatePicker: UIDatePicker!
@@ -36,16 +38,14 @@ class TaskDetailViewController: UIViewController {
         self.navigationController?.popViewControllerAnimated(true)
     }
     
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func doneBarButtonPressed(sender: UIBarButtonItem) {
+        
+        var task = TaskModel(task: taskTextField.text, subTask: subtaskTextField.text, date: dueDatePicker.date, completed:false)
+        
+        mainVC.baseArray[0][mainVC.tableView.indexPathForSelectedRow()!.row] = task
+        
+        self.navigationController?.popViewControllerAnimated(true)
     }
-    */
+    
 
 }

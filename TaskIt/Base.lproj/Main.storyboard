@@ -117,7 +117,11 @@
                                 <action selector="cancelButtonTapped:" destination="WFb-za-atE" id="39M-Ol-7tU"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="Xf9-Ge-X2H"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="Xf9-Ge-X2H">
+                            <connections>
+                                <action selector="doneBarButtonPressed:" destination="WFb-za-atE" id="1wH-YI-1ms"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -156,6 +160,9 @@
                                 <state key="normal" title="Add Task">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addTaskButtonTapped:" destination="Xke-j3-ulL" eventType="touchUpInside" id="9uB-Tc-9Br"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBo-3K-6mk">
                                 <rect key="frame" x="30" y="102" width="280" height="30"/>
@@ -194,6 +201,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="dueDatePicker" destination="RXz-xs-Jaf" id="KIx-BZ-AfK"/>
+                        <outlet property="subtaskTextField" destination="5If-7n-J6A" id="Ur9-A3-W5a"/>
+                        <outlet property="taskTextField" destination="NBo-3K-6mk" id="Li2-5t-QNd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ly2-BR-opy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
