@@ -1,5 +1,5 @@
 //
-//  TaskDetailViewController.swift
+//  AddTaskViewController.swift
 //  TaskIt
 //
 //  Created by Alex Meyers on 1/13/15.
@@ -8,23 +8,12 @@
 
 import UIKit
 
-class TaskDetailViewController: UIViewController {
-    
-    var detailTaskModel: TaskModel!
-    
-    @IBOutlet weak var taskTextField: UITextField!
-    @IBOutlet weak var subtaskTextField: UITextField!
-    @IBOutlet weak var dueDatePicker: UIDatePicker!
-    
-    
+class AddTaskViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        self.taskTextField.text = detailTaskModel.task
-        self.subtaskTextField.text = detailTaskModel.subTask
-        self.dueDatePicker.date = detailTaskModel.date
     }
 
     override func didReceiveMemoryWarning() {
