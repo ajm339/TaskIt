@@ -13,6 +13,9 @@
 		7B1AD1501A64757B007ED8B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B1AD14F1A64757B007ED8B9 /* Images.xcassets */; };
 		7B1AD1531A64757B007ED8B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B1AD1511A64757B007ED8B9 /* LaunchScreen.xib */; };
 		7B1AD15F1A64757B007ED8B9 /* TaskItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1AD15E1A64757B007ED8B9 /* TaskItTests.swift */; };
+		7BC9BA0F1A647AD6009D87AF /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC9BA0E1A647AD6009D87AF /* TaskCell.swift */; };
+		7BF427E21A65872300449AF2 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF427E11A65872300449AF2 /* TaskModel.swift */; };
+		7BF427E61A6589D100449AF2 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF427E51A6589D100449AF2 /* TaskDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		7B1AD1581A64757B007ED8B9 /* TaskItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1AD15D1A64757B007ED8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B1AD15E1A64757B007ED8B9 /* TaskItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItTests.swift; sourceTree = "<group>"; };
+		7BC9BA0E1A647AD6009D87AF /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		7BF427E11A65872300449AF2 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		7BF427E51A6589D100449AF2 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 			children = (
 				7B1AD1481A64757B007ED8B9 /* AppDelegate.swift */,
 				7B1AD14A1A64757B007ED8B9 /* ViewController.swift */,
+				7BF427E51A6589D100449AF2 /* TaskDetailViewController.swift */,
+				7BF427E11A65872300449AF2 /* TaskModel.swift */,
+				7BC9BA0E1A647AD6009D87AF /* TaskCell.swift */,
 				7B1AD14C1A64757B007ED8B9 /* Main.storyboard */,
 				7B1AD14F1A64757B007ED8B9 /* Images.xcassets */,
 				7B1AD1511A64757B007ED8B9 /* LaunchScreen.xib */,
@@ -213,7 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B1AD14B1A64757B007ED8B9 /* ViewController.swift in Sources */,
+				7BC9BA0F1A647AD6009D87AF /* TaskCell.swift in Sources */,
+				7BF427E21A65872300449AF2 /* TaskModel.swift in Sources */,
 				7B1AD1491A64757B007ED8B9 /* AppDelegate.swift in Sources */,
+				7BF427E61A6589D100449AF2 /* TaskDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +419,7 @@
 				7B1AD1641A64757B007ED8B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B1AD1651A64757B007ED8B9 /* Build configuration list for PBXNativeTarget "TaskItTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +428,7 @@
 				7B1AD1671A64757B007ED8B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
