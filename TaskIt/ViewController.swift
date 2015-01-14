@@ -59,7 +59,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let thisTask = fetchedResultsController.objectAtIndexPath(indexPath) as TaskModel
+        
+//        var fetched : [AnyObject]? = fetchedResultsController.fetchedObjects
+        
+//        var thisTaskTest = fetchedResultsController.objectAtIndexPath(indexPath)
+//        println(fetched?.description)
+//        println(thisTaskTest.description)
+        let thisTask = (fetchedResultsController.objectAtIndexPath(indexPath) as TaskModel)
         var cell: TaskCell = tableView.dequeueReusableCellWithIdentifier("myCell") as TaskCell
         cell.taskLabel.text = thisTask.task
         cell.descriptionLabel.text = thisTask.subtask
